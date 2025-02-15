@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz QCM - Open Trivia</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>API Helper</h1>
+
+  <form id="config-form">
+    
+    <div>
+      <label for="numQuestions">Number of Questions:</label>
+      <select id="numQuestions">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="">Any Category</option>
+        <option value="9">General Knowledge</option>
+        <option value="10">Entertainment: Books</option>
+        <option value="11">Entertainment: Film</option>
+        <option value="12">Entertainment: Music</option>
+        <option value="13">Entertainment: Musicals &amp; Theatres</option>
+        <option value="14">Entertainment: Television</option>
+        <option value="15">Entertainment: Video Games</option>
+        <option value="16">Entertainment: Board Games</option>
+        <option value="17">Science &amp; Nature</option>
+        <option value="18">Science: Computers</option>
+        <option value="19">Science: Mathematics</option>
+        <option value="20">Mythology</option>
+        
+      </select>
+    </div>
+  
+    <div>
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="">Any Difficulty</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="type">Select Type:</label>
+      <select id="type">
+        <option value="">Any Type</option>
+        <option value="multiple">Multiple Choice</option>
+        <option value="boolean">True / False</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="encoding">Select Encoding:</label>
+      <select id="encoding">
+        <option value="default">Default Encoding</option>
+        <option value="urlLegacy">Legacy URL Encoding</option>
+        <option value="url3986">URL Encoding (RFC 3986)</option>
+        <option value="base64">Base64 Encoding</option>
+      </select>
+    </div>
+   
+    <button type="submit">GENERATE API URL</button>
+  </form>
+
+  <div id="quiz-container">
+    <h2>Quiz</h2>
+    <div class="score-timer">
+      <div id="score" class="score">Score: 0</div>
+      <div id="timer" class="timer">Temps: 20s</div>
+    </div>
+    <div id="question-area"></div>
+  </div>
+
+
+  <div id="result-container">
+    <h2>Résultat</h2>
+    <p id="final-score"></p>
+    <button id="restart-btn" class="btn">Recommencer</button>
+  </div>
+</div>
+
+<script src="part2.js">
+    
+    
+  </script>
+  
+</body>
+</html>
