@@ -15,7 +15,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-warning">{{ book.title }}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{{ book.author }}</h6>
-                            <img :src="book.image" alt="IMAGE">
+                            <img src="@/assets/imagebook.jpg" alt="IMAGE">
                             <p class="card-text mt-3">
                                 <strong>Category:</strong> {{ book.category }}<br />
 
